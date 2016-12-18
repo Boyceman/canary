@@ -1,0 +1,23 @@
+{
+  "name": "flex",
+  "version": "1.0.0",
+  "description": "flex demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Boyceman/flex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boyceman/flex/issues"
+  },
+  "homepage": "https://github.com/Boyceman/flex#readme",
+  "devDependencies": {
+    "sass-loader": "^4.1.0",
+    "webpack": "^1.14.0"
+  }
+}
