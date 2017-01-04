@@ -1,26 +1,35 @@
 {
-  "name": "flex",
+  "name": "Canary Islands",
   "version": "1.0.0",
-  "description": "flex demo",
+  "description": "A lot of canaries with FE",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node app/app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Boyceman/flex.git"
+    "url": "git+ssh://git@github.com/Boyceman/canary.git"
   },
-  "author": "",
+  "author": "boyce",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Boyceman/flex/issues"
+    "url": "https://github.com/Boyceman/canary/issues"
   },
-  "homepage": "https://github.com/Boyceman/flex#readme",
+  "homepage": "https://github.com/Boyceman/canary#readme",
   "devDependencies": {
     "autoprefixer": "^6.5.4",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "http2": "^3.3.6",
     "node-sass": "^4.1.0",
+    "open": "^0.0.5",
     "postcss-loader": "^1.2.1",
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",

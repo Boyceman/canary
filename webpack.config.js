@@ -1,11 +1,12 @@
 var autoprefixer = require('autoprefixer');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var path = require('path');
 
 module.exports = {
-  entry: './entry.js',
+  entry: './client/entry.js',
   output: {
     filename: 'bundle.js',
-    path: __dirname 
+    path: path.resolve(__dirname, './client')
   },
   module: {
     loaders: [
