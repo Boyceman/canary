@@ -1,6 +1,10 @@
 import webpack from 'webpack'
 import http from 'http'
+import fs from 'fs'
 
-http.createServer((req, res)=>{
-  res.end('Hello world')
-}).listen('8080')
+fs.readFile('./index.html', (err, html)=>{
+  if(err) throw err
+  http.createServer((req, res)=>{
+    res.end(html)
+  }).listen('8080')
+})
