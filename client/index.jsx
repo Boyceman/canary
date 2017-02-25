@@ -11,7 +11,7 @@ const store = createStore(todoApp);
 
 renderWithHotReload(App)
 
-if (module.hot) {
+if (module.hot){
   module.hot.accept('./containers/App', () => {
     const App = require('./containers/App').default;
 		renderWithHotReload(App)
