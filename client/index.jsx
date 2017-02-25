@@ -11,20 +11,20 @@ const store = createStore(todoApp);
 
 renderWithHotReload(App)
 
-if (module.hot){
+if (module.hot) {
   module.hot.accept('./containers/App', () => {
     const App = require('./containers/App').default;
-		renderWithHotReload(App)
+    renderWithHotReload(App)
   })
 }
 
-function renderWithHotReload(RootContainer){
-	render(
-  	<AppContainer>
+function renderWithHotReload(RootContainer) {
+  render(
+    <AppContainer>
   		<Provider store={store}>
       	<RootContainer />
 			</Provider>
     </AppContainer>,
-		document.getElementById('app')
-	)
+    document.getElementById('app')
+  )
 }
