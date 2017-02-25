@@ -1,0 +1,9 @@
+{
+	"name": "canary-react-redux",
+	"script": "app/index.js",
+	"watch": ["app"],
+	"ignore_watch": "node_modules",
+	"env": {
+		"NODE_ENV": "dev"
+	}
+}
