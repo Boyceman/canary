@@ -1,5 +1,0 @@
-require('babel-polyfill');
-require('babel-register')({
-  extensions: ['.es6', '.es', '.js']
-});
-require('./index.js')
